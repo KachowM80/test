@@ -14,7 +14,7 @@ def print_all_aircraft():
     result = cursor.fetchall()
     #loop
     for fighter in result:
-        print(f"{fighter[1]}{fighter[2]}{fighter[3]}{fighter[4]}{fighter[5]}{fighter[6]}")
+        print(f"{fighter[1]:<30}{fighter[2]:<8}{fighter[3]:<6}{fighter[4]:<6}{fighter[5]:<6}{fighter[6]:<6}")
     #loop done
     db.close()
 
